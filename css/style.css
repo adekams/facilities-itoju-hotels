@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #f5fafe;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+p{
+    line-height: 20px;
+}
+/* section{
+    padding: 15px 0;
+} */
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+main .first-img{
+    position: relative;
+}
+main .first-img img{
+    max-width: 100%;
+}
+main .abode{
+    position: relative;
+    top: -20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    max-width: 100%;
+    padding: 3em 0.2em;
+    max-width: 70%;
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+}
+.abode #all-images, .abode #other-img{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.abode #all-images .letters h2{
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+main .abode img, main .abode .letters{
+    margin: 1em;
+    width: 80%;
+}
+.abode #all-images .letters p{
+    font-size: 120%;
+    margin-bottom: 2em;
+}
+main .abode #all-images{
+    justify-content: space-evenly;
+}
+
+main .more-facilities{
+    max-width: 100%;
+    padding: 3em 0.2em;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.more-facilities .section-title{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+}
+
+main .more-facilities #facilities .facility-card{
+    width: 80%;
+    border: 1px solid #fff;
+    margin: 1.5em;
+}
+.more-facilities .facility-card .words{
+    background-color: #fff;
+    padding: 5%;
+    font-size: 1.8em;
+}
+.more-facilities .facility-card .words p{
+    font-size: 16px;
+}
+.more-facilities .facility-card .words .more{
+    font-size: 16px;
+    cursor: pointer;
+    margin: 1em 0;
+    color: #D19F4E;
+}
+.more-facilities #facilities .facility-card img{
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    main .abode img{
+        width: 40%;
+    }
+    .abode #all-images .letters {
+        width: 85%;
+        margin-top: 2em;
+    }
+    .abode #all-images .letters h2{
+        font-size: 2em;
+    }
+    
+    .abode #all-images #right-img{
+        justify-content: space-evenly;
+    }
+    main .more-facilities #facilities .facility-card{
+        width: 20%;
+    }
+}
+
+@media (min-width: 1024px){
+    main .abode img{
+       width: 25%;
+    }
+    .abode #all-images .letters {
+        width: 52%;
+    }
+    /* .abode #all-images .letters p{
+        font-size: 20px;
+    } */
+    .abode #all-images #right-img{
+        width: 25%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .abode #all-images #right-img img{
+        width: 100%;
+    }
+}
