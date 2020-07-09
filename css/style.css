@@ -1,19 +1,81 @@
+:root{
+    --primary-color: #d19f4e;
+    --secondary-color: #fff;
+
+}
 *{
     margin: 0;
     padding: 0;
     font-size: 10px;
+    border: none;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 html, body{
     margin: 0;
-    padding: 0;
-    background-color: #f5fafe;
+    padding: 0;   
+    max-width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
 }
-p{
-    line-height: 20px;
+body{
+    background-color: #F5FAFE;    
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;     */
+}
+
+header #top{
+    background-color: #1C2133;  
+    padding: 20px 5%;
+}
+header #top .white-btn, .newsletter .black-btn{
+    margin-left: 12px;
+}
+
+header .logo a{
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 25px;
+}
+.white-btn, .black-btn{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+ .black-btn:hover {
+    color: var(--secondary-color);
+}
+
+.white-btn:hover, .black-btn{
+    color: black;
+}
+header nav{
+    padding: 15px 0;
+    border-bottom: 1px solid #868686;
+    background-color: #21273D;
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
+    padding: 10px 0;
+    display: inline;
+}
+ul li a.active{
+    color: var(--primary-color);
+}
+.nav li a{
+    margin: 10px 8px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--secondary-color);
+} 
+.nav li a:hover{
+    color: var(--primary-color);
 }
 
 .flex{
@@ -21,18 +83,124 @@ p{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+main{
+    margin-bottom: 20px;
+    
+} 
+main .image{
+    padding-top: 20px;
+    background-color: #21273D;
+    text-align: center;
+    
+}
+main .image img{
+    width: 55%;
+    height: auto;
+}
 main .first-img{
     position: relative;
+    background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.3));
 }
 main .first-img img{
+    position: relative;
+    max-width: 100%;
+    z-index: -1;
+    display: block;
+}
+.first-img .nav{
+    padding: 25px 0;    
+    border-bottom: 1px solid #000;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.first-img .nav a{
+    color: #000;
+    margin: 10px 2px;
+}
+.first-img .nav a.active{
+    text-decoration: solid underline;
+    color: var(--primary-color);
+}
+
+.first-img .find-room{    
+    width: 100%;
+    text-align: center;
+}
+
+.find-room label{
+    font-weight: 900;
+    padding-top: 20px;
+}
+
+.group{
+    display: inline-block;
+}
+
+.first-img .find-room hr{
+    border: 1px;
+}
+
+.first-img .find-room .options{
+    background-color: var(--secondary-color);
+    padding-top: 20px;
+    margin: 0 auto;
+    display: inline;
+}
+.rooms img{
+    width: 100%;
+}
+section.rooms{
+    margin: 50px auto;
+}
+
+.rooms .detail{
+    background-color: #21273D;
+    color: var(--secondary-color);
+    font-weight: 400;
+    padding: 10px 20px;
     max-width: 100%;
 }
+.rooms .detail .price{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.rooms .card{
+    background-color: #21273D;
+    width: 95%;
+    margin: 15px 10px;
+}
+
+.rooms .detail .flex{
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.rooms .check{
+   margin-bottom: 10px; 
+   font-size: 16px;
+}
+
+.rooms .check i, .checklist i{
+    border-radius: 50%;
+    padding: 5px; 
+    margin-top: 10px;
+    margin-right: 20px;
+    
+    border: 1px solid var(--primary-color);
+}
+.rooms .star i{
+    color: var(--primary-color);
+    
+}
+
 main .abode{
     position: relative;
     top: -20px;
     box-shadow: 1px 2px 14px rgba(0, 0, 0, 0.5);
-    background-color: #fff;
-    max-width: 100%;
+    background-color: var(--secondary-color);
     padding: 3em 0.2em;
     max-width: 80%;
     margin: 0 auto;
@@ -53,34 +221,31 @@ main .abode img, main .abode .letters{
     font-size: 1.3em;
     margin-bottom: 1em;
 }
-main .abode #all-images{
-    justify-content: space-evenly;
-}
 
 main .more-facilities{
-    max-width: 100%;
+    /* max-width: 95%; */
     padding: 3em 0.2em;
-    max-width: 95%;
     margin: 0 auto;
 }
 .more-facilities .section-title{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 900;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: center;
-    margin: 10px;
+    margin: 1em;
+}
+main .more-facilities .explore{
+    text-align: center;
+    font-size: 16px;
 }
 
 main .more-facilities #facilities .facility-card{
     width: 80%;
-    border: 1px solid #fff;
-    margin: 1.5em;
+    margin: 1.5em auto;
 }
 .more-facilities .facility-card .words{
     box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
     padding: 5%;
-    font-size: 1.8em;
 }
 .more-facilities .facility-card .words p{
     font-size: 16px;
@@ -94,16 +259,259 @@ main .more-facilities #facilities .facility-card{
     font-weight: 600;
     cursor: pointer;
     margin: 1em 0;
-    color: #D19F4E;
+    color: var(--primary-color);
+    
 }
 .more-facilities #facilities .facility-card img{
     width: 100%;
 }
 
-@media (min-width: 768px){
+.contact-us{
+    margin: 50px auto;
+    max-width: 80%;    
+    text-align: center;
+}
+.contact-us p, .contact-us h1, .contact-us h2{
+    padding: 5px 0;
+}
+.contact-us #our-form{
+    font-weight: 400;
+    font-size: 20px;
+}
+.contact-us h1, .contact-us .email-address a, footer .orange{
+    color: var(--primary-color);
+    font-size: 20px;
+    
+}
+
+.contact-us .email-address a{
+    text-decoration: none;
+    cursor: pointer;
+} 
+.contact-us #how{
+    font-size: 1.5em;
+}
+form{
+    text-align: center;
+    margin: 0 auto;
+}
+form .fill{
+    margin: 20px 0;
+    text-align: left;
+}
+form label{
+    font-weight: 500;
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 5px;
+}
+form input{
+    height: 35px;
+}
+form input, form textarea{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: #f7f7f9;
+}
+form input:focus, 
+form textarea:focus{
+    outline-color: var(--primary-color);
+    
+}
+form textarea{
+    height: 100px;
+    resize: vertical;
+}
+form .button{
+    text-align: right;
+}
+
+form .btn:hover{
+    color: #ccc;
+    font-weight: 600;
+}
+header .flex{  
+    justify-content: space-between;
+}
+.majesty-comfort{
+    position: absolute; 
+    top: 50%;
+    margin-top: -40px;
+    width: 100%; 
+    text-align: center; 
+    color: var(--secondary-color);
+}
+.majesty-comfort h1{
+    font-size: 28px;
+    font-weight: 600;
+    
+}
+.majesty-comfort p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.wrapper{
+    width: 91%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr;
+    gap: 15px;
+}
+.wrapper img, video{
+    width: 100%;
+}
+.two, .two img{
+    /* border: 1px solid #abc; */
+    height: 480px;
+}
+
+#cozy, #ambience{
+    box-sizing: border-box;    
+    padding: 0px 25px;
+    position: relative;
+}
+#cozy .black-btn{
+    margin-top: 20px;
+    margin-left: 0;
+
+}
+#cozy h3, #ambience h3, .newsletter h3{
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#ambience{
+    background-color: #21273D;
+    color: var(--secondary-color);
+}
+.wrapper .words{
+    line-height: 30px;
+    padding: 50px 0px;
+
+}
+.wrapper .words p{
+    font-size: 18px;
+    
+    font-weight: lighter;
+}
+#ambience .words .flex{
+    width: 85%;
+    justify-content: space-between;
+}
+.watch-video, .newsletter{
+    max-width: 91%;
+    margin: 20px auto;
+}
+.newsletter{
+    background: #FDF3E7;
+    /* margin-top: 20px; */
+    padding: 40px;
+}
+.newsletter form{
+    margin-top: 30px;
+}
+
+
+
+.footer{
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #21273D;
+    color: #ccc;
+    padding: 2.5em 1em;
+}
+footer p{
+    cursor: pointer;
+    margin: 1em;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+}
+footer p:hover{
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+footer #copy{
+    padding-top: 10px;
+    max-width: 550px;
+}
+ footer #copy .copyright{
+    font-size: 14px;
+    color: #aaa;
+}
+footer a{
+    color: #ccc;
+    text-decoration: none;
+}
+footer hr{
+    border:1px solid var(--primary-color);    
+}
+footer h3{
+    margin: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+footer .footer-content{
+    width: 100%;
+}
+main .other{
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+@media(min-width: 768px){
+    header .logo a{
+        font-size: 40px;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        margin-left: -40px;
+        top: 0;
+        padding-top: 10px;
+    }
+    header ul li a{
+        
+        margin: 10px 25px;
+        font-size: 18px;
+    }
+    .majesty-comfort h1{
+        font-size: 550%;
+    }
+    .first-img .find-room{
+        position: relative;
+        top: -70px;
+
+    }
+    .group{
+        margin-right: 20px;
+    }
+    .first-img .find-room .button{
+        display: inline-block;
+        position: absolute;
+        margin-left: 20px;
+        
+    } 
+
+    .rooms .card{
+        width: 30%;
+    }
+
+    .contact-us h1, .contact-us .email-address a{
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+
     main .abode img{
         width: 40%;
     }
+
     .abode #all-images .letters {
         width: 85%;
         margin-top: 2em;
@@ -118,9 +526,46 @@ main .more-facilities #facilities .facility-card{
     main .more-facilities #facilities .facility-card{
         width: 40%;
     }
+    /*main .image img{
+       width: 300px;
+        height: auto;
+    }*/
+    .contact-us{
+        max-height: 60%;
+    }
+    form input, form textarea{
+        max-width: 100%;
+        
+    }
+    form{
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .wrapper{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .wrapper .two, .two img{
+        height: auto;
+    }
+    .newsletter h3{
+        max-width: 50%;
+    }
+    .newsletter input{
+        width: 50%;
+        height: 40px;
+    }
+    
+    footer{
+        padding: 20px 50px;
+    }
+    footer .footer-content{
+        max-width: 40%;
+    }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 992px){
     main .abode img{
        width: 25%;
     }
@@ -130,6 +575,7 @@ main .more-facilities #facilities .facility-card{
     .abode #all-images .letters p{
         font-size: 1.8em;
         line-height: 1.5;
+        
     }
     .abode #all-images #right-img{
         width: 25%;
@@ -143,4 +589,18 @@ main .more-facilities #facilities .facility-card{
         width: 22%;
         margin: 3em 1em;
     }
+    .wrapper .words{
+        position: absolute;
+        top: 50%; 
+        margin-top: -140px;
+        padding: 0 50px;
+    }
+    .wrapper .words .flex{
+        max-width: 300px;
+        
+    }
+    footer .footer-content{
+        max-width: 25%;
+    }
 }
+
