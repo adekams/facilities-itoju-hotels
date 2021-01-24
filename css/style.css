@@ -25,7 +25,7 @@ body{
 
 header #top{
     background-color: #1C2133;  
-    padding: 20px 5%;
+    padding: 30px 5%;
 }
 header #top .white-btn, .newsletter .black-btn{
     margin-left: 12px;
@@ -59,6 +59,7 @@ header .logo a{
 .white-btn:hover, .black-btn{
     color: black;
 }
+
 header nav{
     padding: 15px 0;
     border-bottom: 1px solid #868686;
@@ -263,9 +264,10 @@ main .more-facilities #facilities .facility-card{
 }
 .more-facilities .facility-card .words p{
     font-size: 16px;
+    line-height: 1.5;
 }
 .more-facilities .facility-card .words .more{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .more-facilities .facility-card .words .more a{
     text-decoration: none;
@@ -280,6 +282,7 @@ main .more-facilities #facilities .facility-card{
     width: 100%;
 }
 /* Facilities page ends*/
+
 
 /* Contact us page */
 .contact-us{
@@ -351,6 +354,7 @@ form .btn:hover{
 /* Contact us page ends*/
 
 
+/* home page */
 header .flex{  
     justify-content: space-between;
 }
@@ -384,28 +388,44 @@ header .flex{
 .wrapper img, video{
     width: 100%;
 }
-.two, .two img{
+.two {
     /* border: 1px solid #abc; */
     height: 480px;
 }
+.two img {
+    height: 100%;
+    object-fit: cover;
+}
+
 
 #cozy, #ambience{
     box-sizing: border-box;    
     padding: 0px 25px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
 }
-#cozy .black-btn{
+#cozy .black-btn {
     margin-top: 20px;
     margin-left: 0;
 
 }
-#cozy h3, #ambience h3, .newsletter h3{
+
+#cozy h3, 
+#ambience h3, 
+.newsletter h3 {
     letter-spacing: 2px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 20px;   
 }
 
-#ambience{
+#cozy h3, 
+#ambience h3 {
+    margin-bottom: 30px;
+}
+
+#ambience {
     background-color: #21273D;
     color: var(--secondary-color);
 }
@@ -421,6 +441,7 @@ header .flex{
 }
 #ambience .words .flex{
     width: 85%;
+    margin-top: 20px;
     justify-content: space-between;
 }
 .watch-video, .newsletter{
@@ -495,7 +516,7 @@ main .other{
         left: 50%;
         margin-left: -40px;
         top: 0;
-        padding-top: 10px;
+        padding-top: 20px;
     }
     header ul li a{
         
@@ -611,9 +632,9 @@ main .other{
         margin: 3em 1em;
     }
     .wrapper .words{
-        position: absolute;
+        /* position: absolute;
         top: 50%; 
-        margin-top: -140px;
+        margin-top: -140px; */
         padding: 0 50px;
     }
     .wrapper .words .flex{
