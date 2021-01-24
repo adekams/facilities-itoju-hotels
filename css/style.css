@@ -197,8 +197,7 @@ section.rooms{
     border-radius: 50%;
     padding: 5px; 
     margin-top: 10px;
-    margin-right: 20px;
-    
+    margin-right: 20px; 
     border: 1px solid var(--primary-color);
 }
 .rooms .star i{
@@ -206,6 +205,7 @@ section.rooms{
     
 }
 /* Rooms page ends*/
+
 
 /* Facilities page - well lit abode section */
 main .abode{
@@ -389,7 +389,6 @@ header .flex{
     width: 100%;
 }
 .two {
-    /* border: 1px solid #abc; */
     height: 480px;
 }
 .two img {
@@ -404,7 +403,6 @@ header .flex{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
 }
 #cozy .black-btn {
     margin-top: 20px;
@@ -436,7 +434,6 @@ header .flex{
 }
 .wrapper .words p{
     font-size: 18px;
-    
     font-weight: lighter;
 }
 #ambience .words .flex{
@@ -450,7 +447,6 @@ header .flex{
 }
 .newsletter{
     background: #FDF3E7;
-    /* margin-top: 20px; */
     padding: 40px;
 }
 .newsletter form{
@@ -632,9 +628,6 @@ main .other{
         margin: 3em 1em;
     }
     .wrapper .words{
-        /* position: absolute;
-        top: 50%; 
-        margin-top: -140px; */
         padding: 0 50px;
     }
     .wrapper .words .flex{
